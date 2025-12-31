@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
+import Header from "@/component/header";
 
 
 const hindSiliguri = Hind_Siliguri({
@@ -22,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${hindSiliguri.variable} antialiased`}
+        className={`${hindSiliguri.variable} antialiased min-h-screen bg-[#0b1120] bg-hero`}
       >
+              <Header/>
         {children}
       </body>
     </html>
