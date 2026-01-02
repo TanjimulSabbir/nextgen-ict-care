@@ -1,119 +1,26 @@
 import Image from "next/image";
 import React from "react";
-import TanjimulSabbir from "@/public/media/mentors/TanjimulSabbir.jpeg"
-import Nirjona from "@/public/media/mentors/Nirjona.jpeg"
-
-/* ================= TYPES ================= */
-
-interface Education {
-  institute: string;
-  department: string;
-}
-
-interface Instructor {
-  id: number;
-  name: string;
-  designation: string;
-  image: string;
-  experience: string;
-  bio: string;
-  education: Education[];
-  expertise: string[];
-  teachingStyle: string;
-  linkedIn: string;
-}
-
-interface AboutUsInfo {
-  title: string;
-  subtitle: string;
-  description: string;
-}
-
-/* ================= DATA ================= */
-const aboutUs: AboutUsInfo = {
-  title: "About Us",
-  subtitle: "Building Strong ICT Foundations for HSC Students",
-  description: `NextGen ICT Care একটি শিক্ষার্থী-কেন্দ্রিক অনলাইন লার্নিং প্ল্যাটফর্ম, যেখানে HSC ICT বিষয়টিকে সহজ, বাস্তবসম্মত ও আনন্দদায়কভাবে শেখানো হয়। আমাদের বিশ্বাস—ভালো ফলাফলের জন্য শুধু পড়ানো যথেষ্ট নয়, বরং যত্নসহকারে ও সঠিক পদ্ধতিতে পড়ানোই আসল।
-
-আমাদের দুইজন অভিজ্ঞ মেন্টর প্রতিটি শিক্ষার্থীকে ব্যক্তিগত গুরুত্ব দিয়ে গাইড করেন। প্রত্যেক শিক্ষার্থীর দুর্বলতা, সক্ষমতা ও শেখার গতি বিবেচনায় রেখে আমরা পাঠদান পরিচালনা করি, যেন কেউ পিছিয়ে না পড়ে।
-
-HSC ICT-এর সম্পূর্ণ সিলেবাস আমরা গভীরভাবে বিশ্লেষণ করেছি। কোন টপিক সহজ, কোনটি মাঝারি এবং কোনটি তুলনামূলকভাবে কঠিন—সবকিছু আলাদা করে সাজিয়ে একটি সুসংগঠিত ও কার্যকর কোর্স আউটলাইন তৈরি করা হয়েছে। নিয়মিত ক্লাসে অংশগ্রহণ ও মনোযোগ দিয়ে পড়াশোনা করলে অল্প সময়েই বিষয়গুলো পরিষ্কারভাবে বুঝতে পারবে—এই আত্মবিশ্বাস আমাদের আছে।
-
-আমরা চাই শিক্ষার্থীরা আগে আমাদের পড়ানোর পদ্ধতি দেখুক, বুঝুক এবং তারপর নিজেরাই সিদ্ধান্ত নিক। কারণ আমরা শুধু ফলাফলের প্রতিশ্রুতি দিই না, আমরা শেখার একটি শক্ত ভিত্তি তৈরি করে দিই।
-
-পড়ানো আমাদের পেশা নয়—পড়ানো আমাদের ভালোবাসা। সেই ভালোবাসা থেকেই NextGen ICT Care-এর যাত্রা।
-
-তোমরা এসো, আমাদের সাথে শেখো—ইনশাআল্লাহ ভালো লাগবেই।`,
-};
-
-
-const instructors: Instructor[] = [
-  {
-    id: 1,
-    name: "Tanjimul Islam Sabbir",
-    designation: "Software Engineer & ICT Mentor",
-    image: TanjimulSabbir,
-    experience: "3+ Years",
-    bio: "Software engineer passionate about teaching HSC ICT using real-world examples, problem-solving techniques, and exam-oriented guidance.",
-    education: [
-      {
-        institute: "Rajshahi University",
-        department: "Bachelor of Philosophy",
-      },
-    ],
-    expertise: [
-      "HSC ICT",
-      "Programming Basics",
-      "Web Technology",
-      "Problem Solving",
-    ],
-    teachingStyle: "Concept-based, practical, exam-focused",
-    linkedIn: "https://www.linkedin.com/in/tanjimulsabbir",
-  },
-  {
-    id: 2,
-    name: "Ayesha Ahmmed Nirjona",
-    designation: "ICT Lecturer",
-    image: Nirjona,
-    experience: "2+ Years",
-    bio: "Dedicated ICT lecturer with strong academic expertise, helping students understand complex ICT topics in a simple and friendly way.",
-    education: [
-      {
-        institute: "University of Asia Pacific",
-        department: "BSc in Computer Science & Engineering",
-      },
-      {
-        institute: "Bangladesh University of Professionals",
-        department: "MSc in Information & Communication Technology",
-      },
-    ],
-    expertise: [
-      "HSC ICT",
-      "Academic Teaching",
-      "Concept Explanation",
-      "Student Guidance",
-    ],
-    teachingStyle: "Friendly, structured, student-focused",
-    linkedIn: "https://www.linkedin.com/in/ayesha-ahmmed-nirjona",
-  },
-];
-
-/* ================= COMPONENT ================= */
+import { aboutUs, instructors } from "@/data";
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="bg-[#0b1120] py-20 px-6 font-siliguri">
+    <section className="py-10 px-6 font-siliguri">
 
       {/* About Header */}
       <div className="max-w-5xl mx-auto text-center mb-20">
-        <h1 className="text-4xl font-bold text-gray-100 mb-6">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-blue-400 via-cyan-500 to-sky-400 bg-clip-text text-transparent">
           {aboutUs.subtitle}
         </h1>
 
-        <p className="text-gray-300 text-lg leading-relaxed whitespace-pre-line">
-          {aboutUs.description}
-        </p>
+        <div className="space-y-6 text-lg leading-relaxed">
+          {aboutUs.description.split("\n\n").map((para, index) => (
+            <p key={index}>
+              {para}
+            </p>
+          ))}
+        </div>
       </div>
+
 
       {/* Instructor Cards */}
       <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2">
@@ -121,15 +28,15 @@ const AboutUs: React.FC = () => {
           <div
             key={teacher.id}
             className="
-          bg-slate-900/80
-          border border-slate-800
-          rounded-2xl
-          p-6
-          shadow-lg
-          hover:shadow-blue-500/10
-          hover:-translate-y-1
-          transition-all duration-300
-        "
+        bg-slate-900/80
+        border border-slate-800
+        rounded-2xl
+        p-6
+        shadow-lg
+        hover:shadow-blue-500/10
+        hover:-translate-y-1
+        transition-all duration-300
+      "
           >
             {/* Profile */}
             <div className="flex items-center gap-5 mb-6">
@@ -144,60 +51,70 @@ const AboutUs: React.FC = () => {
                 <h2 className="text-xl font-semibold text-gray-100">
                   {teacher.name}
                 </h2>
-                <p className="text-blue-400 font-medium">
-                  {teacher.designation}
-                </p>
-                <p className="text-sm text-gray-400">
-                  Experience: {teacher.experience}
-                </p>
+                <p className="text-blue-400 font-medium">{teacher.designation}</p>
+                {/* Workplace */}
+                {teacher.workplace && (
+                  <p className="text-gray-400 text-sm mt-1">{teacher.workplace}</p>
+                )}
               </div>
             </div>
 
             {/* Bio */}
-            <p className="text-gray-300 mb-5 leading-relaxed">
-              {teacher.bio}
-            </p>
+            <p className="text-gray-300 mb-5 leading-relaxed">{teacher.bio}</p>
 
-            {/* Education */}
+            {/* Education + Workplace */}
             <div className="mb-5">
-              <h3 className="font-semibold text-gray-200 mb-3">
-                🎓 Education
-              </h3>
-
+              <h3 className="font-semibold text-gray-200 mb-3">🎓 Education</h3>
               <ul className="space-y-3">
                 {teacher.education.map((edu, index) => (
                   <li
                     key={index}
                     className="border-l-4 border-blue-500/60 pl-4 text-sm"
                   >
-                    <p className="font-medium text-gray-200">
-                      {edu.institute}
-                    </p>
-                    <p className="text-gray-400">
-                      {edu.department}
-                    </p>
+                    <p className="font-medium text-gray-200">{edu.institute}</p>
+                    <p className="text-gray-400">{edu.department}</p>
                   </li>
                 ))}
               </ul>
-            </div>
 
+              {/* Workplace */}
+              {teacher.workplace && (
+                <div className="mt-4 inline-flex items-center gap-x-2 flex-wrap">
+                  <span className="bg-blue-500/20 text-blue-400 font-medium px-3 py-1 rounded-full text-sm border border-blue-500/40 flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 text-blue-300"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 7v4a2 2 0 002 2h14a2 2 0 002-2V7M3 7V5a2 2 0 012-2h14a2 2 0 012 2v2M3 7h18"
+                      />
+                    </svg>
+                    <span>    {teacher.workplace}</span>
+                  </span>
+                </div>
+              )}
+            </div>
             {/* Expertise */}
             <div className="mb-5">
-              <h3 className="font-semibold text-gray-200 mb-3">
-                💡 Expertise
-              </h3>
+              <h3 className="font-semibold text-gray-200 mb-3">💡 Expertise</h3>
               <div className="flex flex-wrap gap-2">
                 {teacher.expertise.map((skill) => (
                   <span
                     key={skill}
                     className="
-                  bg-blue-500/10
-                  text-blue-400
-                  px-3 py-1
-                  rounded-full
-                  text-sm
-                  border border-blue-500/20
-                "
+                bg-blue-500/10
+                text-blue-400
+                px-3 py-1
+                rounded-full
+                text-sm
+                border border-blue-500/20
+              "
                   >
                     {skill}
                   </span>
@@ -205,11 +122,24 @@ const AboutUs: React.FC = () => {
               </div>
             </div>
 
+            {/* Strengths */}
+            {teacher.strengths && (
+              <div className="mb-5">
+                <h3 className="font-semibold text-gray-200 mb-3">⭐ Strengths</h3>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  {teacher.strengths.map((point, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">•</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Teaching Style */}
             <p className="text-sm text-gray-400 mb-4">
-              <span className="text-gray-200 font-medium">
-                Teaching Style:
-              </span>{" "}
+              <span className="text-gray-200 font-medium">Teaching Style:</span>{" "}
               {teacher.teachingStyle}
             </p>
 
@@ -219,18 +149,20 @@ const AboutUs: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="
-            inline-flex items-center gap-2
-            text-blue-400
-            font-medium
-            hover:text-blue-300
-            transition
-          "
+          inline-flex items-center gap-2
+          text-blue-400
+          font-medium
+          hover:text-blue-300
+          transition
+        "
             >
               View LinkedIn →
             </a>
           </div>
         ))}
       </div>
+
+
     </section>
   );
 };
