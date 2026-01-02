@@ -64,10 +64,10 @@ export default function WhyChooseUs() {
                         return (
                             <div
                                 key={index}
-                                className="group relative bg-white/[0.03] border border-white/10 p-8 rounded-[2rem] transition-all duration-500 hover:bg-white/[0.07] hover:-translate-y-2 hover:border-cyan-500/30"
+                                className="group relative bg-white/3 text-center md:text-start border border-white/10 p-8 rounded-4xl transition-all duration-500 hover:bg-white/[0.07] hover:-translate-y-2 hover:border-cyan-500/30"
                             >
                                 {/* Floating Icon with Gradient Background */}
-                                <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center text-white text-3xl shadow-lg transition-transform duration-500 group-hover:rotate-[10deg]`}>
+                                <div className={`w-16 h-16 mb-6 mx-auto rounded-2xl bg-linear-to-br ${feature.color} flex items-center justify-center text-white text-3xl shadow-lg transition-transform duration-500 group-hover:rotate-10`}>
                                     <Icon />
                                 </div>
 
