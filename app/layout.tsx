@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="bn">
       <body
-        className={`${hindSiliguri.variable} antialiased min-h-screen text-white bg-hero`}
+        className={`${hindSiliguri.variable} antialiased min-h-screen text-white bg-[#020617]`}
       >
         <Header />
         {children}

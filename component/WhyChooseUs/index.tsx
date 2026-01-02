@@ -1,74 +1,101 @@
-import React from 'react'
-import { FaCalendar, FaClipboardCheck, FaLightbulb, FaSearch, FaUser } from 'react-icons/fa';
-import { GiHelp } from 'react-icons/gi';
-
+import React from 'react';
+import { FaCalendarAlt, FaRocket, FaMicrochip, FaSearchPlus, FaCheckDouble, FaHeadset } from 'react-icons/fa';
 
 export default function WhyChooseUs() {
     const features = [
         {
-            title: "অফলাইন ব্যাচ",
-            description: "আমরা সরাসরি ফেস-টু-ফেস ক্লাসের মাধ্যমে আপনার ছোট ছোট সমস্যার সমাধান দেব।",
-            icon: FaUser
+            title: "১০০% অফলাইন ইন্টারঅ্যাকশন",
+            description: "অনলাইনের ভিড়ে হারিয়ে যাওয়া নয়, সরাসরি ফেস-টু-ফেস ক্লাসে আপনার প্রতিটি ডাউট ক্লিয়ার করা হবে আমাদের টপ প্রায়োরিটি।",
+            icon: FaMicrochip,
+            color: "from-cyan-500 to-blue-500"
         },
         {
-            title: "কার্যকর শিখন পদ্ধতি",
-            description: "জটিল টপিকগুলো প্র্যাকটিক্যাল উদাহরণের মাধ্যমে পানির মতো সহজ করে দেওয়া হবে।",
-            icon: FaLightbulb
+            title: "স্মার্ট লার্নিং মেথড",
+            description: "জটিল প্রোগ্রামিং বা লজিক গেট মুখস্থ নয়; বাস্তব জীবনের উদাহরণের মাধ্যমে আপনার ব্রেইনে 'Install' করে দেওয়া হবে।",
+            icon: FaRocket,
+            color: "from-purple-500 to-pink-500"
         },
         {
-            title: "ভিন্ন ভিন্ন প্ল্যান",
-            description: "আপনার শেখার গতির ওপর ভিত্তি করে আমরা ৩, ৪ এবং ৫ মাসের আলাদা আলাদা কমপ্লিট সিলেবাস কোর্স ডিজাইন করেছি।",
-            icon: FaCalendar
+            title: "কাস্টমাইজড স্টাডি প্ল্যান",
+            description: "সবার শেখার গতি এক নয়। তাই আমরা ৩, ৪ এবং ৫ মাসের ভিন্ন ভিন্ন কমপ্লিট সিলেবাস প্ল্যান অফার করি আপনার প্রয়োজন অনুযায়ী।",
+            icon: FaCalendarAlt,
+            color: "from-orange-500 to-red-500"
         },
         {
             title: "বোর্ড প্রশ্নের ব্যবচ্ছেদ",
-            description: "আমরা নিয়মিত বোর্ড পরীক্ষার প্রশ্ন অ্যানালাইসিস করি।",
-            icon: FaSearch
+            description: "বিগত ১০ বছরের বোর্ড প্রশ্ন অ্যানালাইসিস করে আমরা এমনভাবে পড়াই যেন প্রশ্ন যেভাবেই আসুক, উত্তর আপনার নখদর্পণে থাকে।",
+            icon: FaSearchPlus,
+            color: "from-green-500 to-emerald-500"
         },
         {
-            title: "সাপ্তাহিক মূল্যায়ন",
-            description: "প্রতি ২ সপ্তাহ অন্তর আপনার মেধা যাচাইয়ের জন্য পরীক্ষা নেওয়া হবে।",
-            icon: FaClipboardCheck
+            title: "ব্যাটেল গ্রাউন্ড (সাপ্তাহিক মূল্যায়ন)",
+            description: "প্রতি ২ সপ্তাহ পর পর রিয়েল টাইম পরীক্ষার মাধ্যমে আপনার অগ্রগতি যাচাই করা হবে, যা আপনাকে পরীক্ষার হলের জন্য প্রস্তুত করবে।",
+            icon: FaCheckDouble,
+            color: "from-blue-500 to-indigo-500"
         },
         {
-            title: "স্পেশাল সলভ ক্লাস",
-            description: "পরীক্ষার পর আমরা আপনার দুর্বলতাগুলো খুঁজে বের করব এবং সেই দুর্বল টপিকগুলোর ওপর আলাদা সময়ে সলভ ক্লাস নেব।",
-            icon: GiHelp
+            title: "ডেডিকেটেড সলভ সেশন",
+            description: "দুর্বলতা লুকিয়ে রাখার দিন শেষ! পরীক্ষার পর স্পেশাল ওয়ান-টু-ওয়ান সলভ ক্লাসের মাধ্যমে আপনার ঘাটতিগুলো পূরণ করা হয়।",
+            icon: FaHeadset,
+            color: "from-yellow-500 to-orange-500"
         }
     ];
 
     return (
-        <section className="py-16">
-            <div className="max-w-7xl mx-auto px-6 text-center">
-                <h1 className="text-4xl font-bold text-cyan-400 mb-4">
-                    কেন আমাদের বেছে নেবেন?
-                </h1>
-                <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-12">
-                    আমরা আইসিটির প্রতিটি কঠিন ও দুর্বোধ্য টপিককে ভেঙে সহজ করে সাজিয়েছি। আমাদের মূল লক্ষ্য হলো আপনাকে কেবল মুখস্থ নয়, বরং বিষয়টি অনুভব করতে সাহায্য করা।
-                </p>
+        <section className="py-24 bg-[#020617] border-t border-gray-900 relative overflow-hidden ">
+            {/* Soft Background Glows */}
+            <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-cyan-500/5 rounded-full blur-[100px]" />
+            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/5 rounded-full blur-[100px]" />
 
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
+                <div className="text-center max-w-3xl mx-auto mb-20">
+                    <h2 className="text-sm font-bold text-cyan-500 uppercase tracking-[0.3em] mb-4">Features</h2>
+                    <h1 className="text-4xl md:text-5xl font-black text-white mb-6">
+                        কেন আমাদের <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">আইসিটি ব্যাচ</span> সেরা?
+                    </h1>
+                    <p className="text-gray-400 text-lg leading-relaxed">
+                        আমরা গতানুগতিক মুখস্থ বিদ্যায় বিশ্বাসী নই। আমাদের লক্ষ্য হলো আইসিটিকে আপনার প্রিয় বিষয়ে রূপান্তর করা এবং প্রতিটি টপিককে পানির মতো সহজ করে তোলা।
+                    </p>
+                </div>
+
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {features.map((feature, index) => {
                         const Icon = feature.icon;
                         return (
                             <div
                                 key={index}
-                                className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center"
+                                className="group relative bg-white/[0.03] border border-white/10 p-8 rounded-[2rem] transition-all duration-500 hover:bg-white/[0.07] hover:-translate-y-2 hover:border-cyan-500/30"
                             >
-                                <div className="p-4 bg-blue-500 text-white rounded-full mb-4 text-3xl">
+                                {/* Floating Icon with Gradient Background */}
+                                <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center text-white text-3xl shadow-lg transition-transform duration-500 group-hover:rotate-[10deg]`}>
                                     <Icon />
                                 </div>
-                                <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+
+                                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
                                     {feature.title}
-                                </h2>
-                                <p className="text-gray-600 dark:text-gray-300">
+                                </h3>
+
+                                <p className="text-gray-400 leading-relaxed group-hover:text-gray-300">
                                     {feature.description}
                                 </p>
+
+                                {/* Decorative Corner Accent */}
+                                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div className="w-2 h-2 rounded-full bg-cyan-500 animate-ping" />
+                                </div>
                             </div>
                         )
                     })}
                 </div>
+
+                {/* Bottom Trust Note */}
+                <div className="mt-20 text-center">
+                    <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-gray-400 italic">
+                        <span className="w-2 h-2 rounded-full bg-green-500" />
+                        আইসিটি নিয়ে দুশ্চিন্তা ছাড়ুন, আমরা আছি আপনার সাথে।
+                    </div>
+                </div>
             </div>
         </section>
-    )
+    );
 }
