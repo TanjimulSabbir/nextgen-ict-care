@@ -2,6 +2,8 @@ import { AboutUsInfo, Instructor } from "./types";
 import TanjimulSabbir from "@/public/media/mentors/TanjimulSabbir.jpeg";
 import Nirjona from "@/public/media/mentors/Nirjona.jpeg";
 
+export { TanjimulSabbir, Nirjona };
+  
 export const Navlinks = [
   { name: "হোম", href: "/" },
   { name: "কোর্সসমূহ", href: "/courses" },
