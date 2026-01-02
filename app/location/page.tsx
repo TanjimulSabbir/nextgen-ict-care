@@ -1,3 +1,4 @@
+import HowToApply from "@/component/how-to-apply/how-to-apply";
 import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp, FaDirections } from "react-icons/fa";
 
@@ -108,6 +109,10 @@ export default function Location() {
                     </div>
                 </div>
 
+             <div className="mt-28">
+                    <HowToApply />
+             </div>
+                
                 {/* Footer Insight */}
                 <div className="mt-20 py-10 border-t border-white/5 text-center">
                     <p className="max-w-2xl mx-auto leading-relaxed italic text-cyan-400">

@@ -3,7 +3,7 @@ import TanjimulSabbir from "@/public/media/mentors/TanjimulSabbir.jpeg";
 import Nirjona from "@/public/media/mentors/Nirjona.jpeg";
 
 export { TanjimulSabbir, Nirjona };
-  
+
 export const Navlinks = [
   { name: "হোম", href: "/" },
   { name: "কোর্সসমূহ", href: "/courses" },
@@ -118,73 +118,73 @@ export const instructors: Instructor[] = [
   },
 ];
 
- export const courses = [
-   {
-     title: "ইন্টারমিডিয়েট ১ম বর্ষ ব্যাচ",
-     subTitle: "Foundation Mastery to advanced",
-     courseFee: "৳১১,০০০",
-     discountPrice: "৳১০,০০০",
-     duration: "৬ মাস",
-     learningCurve: "Beginner Friendly",
-     details:
-       "নতুনদের জন্য জিরো থেকে হিরো হওয়ার কমপ্লিট আইসিটি জার্নি। প্রতিটি টপিক হাতে-কলমে শেখানো হবে।",
-     topics: [
-       "সংখ্যা পদ্ধতির জাদুকরী ট্রিকস",
-       "লজিক গেট ও সার্কিট ডিজাইন",
-       "প্রোগ্রামিংয়ের হাতেখড়ি",
-       "ওয়েব ডিজাইনের বেসিক",
-       "সকল আইসিটি অধ্যায়",
-       "সকল অধ্যায় একদম বেসিক থেকে",
-     ],
-     poster: "",
-     courseDetailsLink: "/course-outline",
-     tag: "Academic Foundation",
-     tagColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
-   },
-   {
-     title: "ইন্টারমিডিয়েট ২য় বর্ষ ব্যাচ",
-     subTitle: "Pro & Practical",
-     courseFee: "৳১৪,০০০",
-     discountPrice: "৳১২,০০০",
-     duration: "৫ মাস",
-     learningCurve: "Moderate Pace",
-     details:
-       "বোর্ড পরীক্ষার জন্য নিজেকে শতভাগ প্রস্তুত করার সেরা সুযোগ। প্র্যাকটিক্যাল ল্যাব ও রিয়েল লাইফ প্রজেক্ট ভিত্তিক ক্লাস।",
-     topics: [
-       "সহ আগের সব টপিকস",
-       "অ্যাডভান্সড C-Programming",
-       "SQL ও ডেটাবেজ ম্যানেজমেন্ট",
-       "বোর্ড প্রশ্ন ব্যবচ্ছেদ",
-       "যোগাযোগ ও নেটওয়ার্কিং",
-     ],
-     poster: "",
-     courseDetailsLink: "/course-outline",
-     tag: "Mentor's Choice",
-     tagColor: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-   },
-   {
-     title: "এইচএসসি পরীক্ষার্থী ২০২৬ ব্যাচ",
-     subTitle: "Last Moment Prep",
-     courseFee: "৳৮,০০০",
-     discountPrice: "৳৭,৫০০",
-     duration: "৩ মাস",
-     learningCurve: "Fast Track",
-     details:
-       "অল্প সময়ে সম্পূর্ণ সিলেবাস শেষ করে সরাসরি এ-প্লাস টার্গেটে পড়াশোনা। স্পেশাল টিপস ও শর্টকাট মেথড।",
-     topics: [
-       ,
-       "সম্পূর্ণ সিলেবাস রিভিশন",
-       "এক্সামে কমন পরে এধরনের বাছায় করা সাজেশন",
-       "MCQ সলভিং সুপার ট্রিকস",
-       "ফুল মডেল টেস্ট সিরিজ",
-       "সময় ব্যবস্থাপনা কৌশল",
-     ],
-     poster: "",
-     courseDetailsLink: "/course-outline",
-     tag: "A+ Mission 2026",
-     tagColor: "bg-red-500/20 text-red-400 border-red-500/30",
-   },
- ];
+export const courses = [
+  {
+    title: "ইন্টারমিডিয়েট ১ম বর্ষ ব্যাচ",
+    subTitle: "Foundation Mastery to advanced",
+    courseFee: "৳১১,০০০",
+    discountPrice: "৳১০,০০০",
+    duration: "৬ মাস",
+    learningCurve: "Beginner Friendly",
+    details:
+      "নতুনদের জন্য জিরো থেকে হিরো হওয়ার কমপ্লিট আইসিটি জার্নি। প্রতিটি টপিক হাতে-কলমে শেখানো হবে।",
+    topics: [
+      "সংখ্যা পদ্ধতির জাদুকরী ট্রিকস",
+      "লজিক গেট ও সার্কিট ডিজাইন",
+      "প্রোগ্রামিংয়ের হাতেখড়ি",
+      "ওয়েব ডিজাইনের বেসিক",
+      "সকল আইসিটি অধ্যায়",
+      "সকল অধ্যায় একদম বেসিক থেকে",
+    ],
+    poster: "",
+    courseDetailsLink: "/course-outline",
+    tag: "Academic Foundation",
+    tagColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+  },
+  {
+    title: "ইন্টারমিডিয়েট ২য় বর্ষ ব্যাচ",
+    subTitle: "Pro & Practical",
+    courseFee: "৳১৪,০০০",
+    discountPrice: "৳১২,০০০",
+    duration: "৫ মাস",
+    learningCurve: "Moderate Pace",
+    details:
+      "বোর্ড পরীক্ষার জন্য নিজেকে শতভাগ প্রস্তুত করার সেরা সুযোগ। প্র্যাকটিক্যাল ল্যাব ও রিয়েল লাইফ প্রজেক্ট ভিত্তিক ক্লাস।",
+    topics: [
+      "সহ আগের সব টপিকস",
+      "অ্যাডভান্সড C-Programming",
+      "SQL ও ডেটাবেজ ম্যানেজমেন্ট",
+      "বোর্ড প্রশ্ন ব্যবচ্ছেদ",
+      "যোগাযোগ ও নেটওয়ার্কিং",
+    ],
+    poster: "",
+    courseDetailsLink: "/course-outline",
+    tag: "Mentor's Choice",
+    tagColor: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+  },
+  {
+    title: "এইচএসসি পরীক্ষার্থী ২০২৬ ব্যাচ",
+    subTitle: "Last Moment Prep",
+    courseFee: "৳৮,০০০",
+    discountPrice: "৳৭,০০০",
+    duration: "৩ মাস",
+    learningCurve: "Fast Track",
+    details:
+      "অল্প সময়ে সম্পূর্ণ সিলেবাস শেষ করে সরাসরি এ-প্লাস টার্গেটে পড়াশোনা। স্পেশাল টিপস ও শর্টকাট মেথড।",
+    topics: [
+      ,
+      "সম্পূর্ণ সিলেবাস রিভিশন",
+      "এক্সামে কমন পরে এধরনের বাছায় করা সাজেশন",
+      "MCQ সলভিং সুপার ট্রিকস",
+      "ফুল মডেল টেস্ট সিরিজ",
+      "সময় ব্যবস্থাপনা কৌশল",
+    ],
+    poster: "",
+    courseDetailsLink: "/course-outline",
+    tag: "A+ Mission 2026",
+    tagColor: "bg-red-500/20 text-red-400 border-red-500/30",
+  },
+];
 /* ================= DATA ================= */
 export const aboutUs: AboutUsInfo = {
   title: "About Us",
@@ -199,6 +199,11 @@ export const faqData = [
     question: "NextGen ICT Care-এর কোন কোন কোর্স আছে?",
     answer:
       "আমাদের সেন্টারে HSC ICT, Programming এবং অন্যান্য একাডেমিক বিষয় শেখানো হয়।",
+  },
+  {
+    question: "আমদের কি কোন অনলাইনের ক্লাসের ব্যবস্থা আছে?",
+    answer:
+      " আপাতত নেই, তবে আমরা ভবিষ্যতে অনলাইন ক্লাসের ব্যবস্থা করার পরিকল্পনা করছি। আপনাদের অনলাইন ক্লাসের ইচ্ছে থাকলে আমদের সাথে যোগাযোগ করুন। আমরা সেই অনুযায়ী ব্যবস্থা নেব।",
   },
   {
     question: "ক্লাসের ব্যাচ কখন শুরু হয় এবং মোট কতটি ব্যাচ আছে?",
@@ -216,7 +221,8 @@ export const faqData = [
   },
   {
     question: "শিক্ষকরা কতটা অভিজ্ঞ?",
-    answer: "আমাদের শিক্ষকরা ICT, Programming এবং একাডেমিক বিষয়ে ৩+ বছরের অভিজ্ঞতা রাখেন।",
+    answer:
+      "আমাদের শিক্ষকরা ICT, Programming এবং একাডেমিক বিষয়ে ৩+ বছরের অভিজ্ঞতা রাখেন।",
   },
   {
     question: "কোর্সের ফি কত? টাকা ফেরত নেয়ার নিয়ম কী?",

@@ -102,7 +102,7 @@ export default function DetailsOfNextGenICTCare() {
                     </div>
                 </div>
                 {/* --- 3. REGISTRATION & COURSE SUMMARY --- */}
-                <div className="bg-white/[0.02] border border-white/10 rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
+                <div className="bg-white/2 border border-white/10 rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] -mr-48 -mt-48" />
 
                     <div className="relative z-10 text-center mb-16">
@@ -124,7 +124,7 @@ export default function DetailsOfNextGenICTCare() {
                         <div className="flex flex-col items-center text-center">
                             <div className="w-16 h-16 bg-indigo-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-6">৩</div>
                             <h4 className="text-xl font-bold text-white mb-2 text-siliguri">সিট নিশ্চিতকরণ</h4>
-                            <p className="text-gray-500 text-sm">অ্যাডমিশন ফি জমা দিয়ে আপনার স্বপ্নের ব্যাচে যাত্রা শুরু করুন।</p>
+                            <p className="text-gray-500 text-sm">আমাদের অফিসে এসে অ্যাডমিশন ফি জমা দিয়ে আপনার স্বপ্নের ব্যাচে যাত্রা শুরু করুন।</p>
                         </div>
                     </div>
 

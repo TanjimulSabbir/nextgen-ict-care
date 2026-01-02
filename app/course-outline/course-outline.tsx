@@ -151,7 +151,7 @@ export default function CourseOutline() {
                         <Link
                             href="https://forms.gle/RZjBZrQi1gV7iahY7"
                             target="_blank"
-                            className="group relative w-full sm:w-auto bg-cyan-500 text-black px-12 py-5 rounded-2xl font-black text-xl overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_20px_40px_rgba(6,182,212,0.25)]"
+                            className="group relative w-full sm:w-auto bg-cyan-500 text-black md:px-12 py-5 rounded-2xl font-black text-xl overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_20px_40px_rgba(6,182,212,0.25)]"
                         >
                             <span className="relative z-10 flex items-center justify-center gap-3">
                                 এখনই রেজিস্ট্রেশন করুন <FaChevronRight className="text-sm group-hover:translate-x-2 transition-transform" />

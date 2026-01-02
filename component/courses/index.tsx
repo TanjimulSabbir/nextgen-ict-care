@@ -2,7 +2,7 @@ import CourseItems from "../course-Items/CourseItems";
 
 export default function OurCourses() {
     return (
-        <section className="py-20 bg-[#020617] border-y border-gray-900 relative">
+        <section className="py-20 bg-[#020617] border-t border-t-gray-900 relative">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Header with Title Decor */}
