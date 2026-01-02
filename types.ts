@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Education {
   institute: string;
   department: string;
@@ -7,7 +9,7 @@ export interface Instructor {
   id: number;
   name: string;
   designation: string;
-  image: string;
+  image: string| StaticImageData;
   experience: string;
   bio: string;
   education: Education[];

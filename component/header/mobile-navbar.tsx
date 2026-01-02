@@ -3,7 +3,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
-export default function MobileMenu({ Navlinks }) {
+interface Navlink {
+    href: string;
+    name: string;
+}
+
+export default function MobileMenu({ Navlinks }: { Navlinks: Navlink[] }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (

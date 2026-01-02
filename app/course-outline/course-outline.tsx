@@ -54,9 +54,9 @@ const courseData = [
 ];
 
 export default function CourseOutline() {
-    const [activeTab, setActiveTab] = useState(null);
+    const [activeTab, setActiveTab] = useState<number | null>(null);
 
-    const toggleTab = (id) => {
+    const toggleTab = (id: number   | null) => {
         setActiveTab(activeTab === id ? null : id);
     };
 

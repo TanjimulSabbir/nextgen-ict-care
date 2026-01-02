@@ -1,15 +1,15 @@
 "use client"
 import { faqData } from '@/data';
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import frentlyAskQuestIllustration from '@/public/media/frequently-ask-question/faq.8116aa7d.svg';
 import Image from 'next/image';
 import { FaChevronDown, FaRegLightbulb, FaHeadset } from 'react-icons/fa';
 
 export default function FrequentlyAskQuest() {
-    const [openIndex, setOpenIndex] = useState(null);
-    const contentRefs = useRef([]);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-    const toggleFAQ = (index) => {
+    const toggleFAQ = (index: number): void => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
@@ -104,7 +104,7 @@ export default function FrequentlyAskQuest() {
                                     </button>
 
                                     <div
-                                        ref={(el) => (contentRefs.current[index] = el)}
+                                        ref={(el) => { contentRefs.current[index] = el; }}
                                         className="overflow-hidden transition-all duration-500 ease-in-out"
                                         style={{ maxHeight: "0px" }}
                                     >
