@@ -18,7 +18,9 @@ export default function OurCourses() {
             topics: ["সংখ্যা পদ্ধতির জাদুকরী ট্রিকস", "লজিক গেট ও সার্কিট ডিজাইন", "প্রোগ্রামিংয়ের হাতেখড়ি", "ওয়েব ডিজাইনের বেসিক", "অন্যান্য সকল আইসিটি কনসেপ্ট"],
             poster: FirstYearBatch,
             courseDetailsLink: "/course/1st-year",
-            tag: "Popular"
+            tag: "Academic Foundation",
+            tagColor: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+
         },
         {
             title: "ইন্টারমিডিয়েট ২য় বর্ষ ব্যাচ",
@@ -31,7 +33,9 @@ export default function OurCourses() {
             topics: ["অ্যাডভান্সড C-Programming", "SQL ও ডেটাবেজ ম্যানেজমেন্ট", "বোর্ড প্রশ্ন ব্যবচ্ছেদ", "নেটওয়ার্কিং", "সহ আগের সব টপিকস"],
             poster: SecondYearBatch,
             courseDetailsLink: "/course/2nd-year",
-            tag: "Standard"
+            tag: "Mentor's Choice",
+            tagColor: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+
         },
         {
             title: "এইচএসসি পরীক্ষার্থী ২০২৬ ব্যাচ",
@@ -44,7 +48,8 @@ export default function OurCourses() {
             topics: ["১০০% কমন সাজেশন", "MCQ সলভিং সুপার ট্রিকস", "ফুল মডেল টেস্ট সিরিজ", "সময় ব্যবস্থাপনা কৌশল"],
             poster: HscExamBatch,
             courseDetailsLink: "/course/examine-2026",
-            tag: "Hot Deal"
+            tag: "A+ Mission 2026",
+            tagColor: "bg-red-500/20 text-red-400 border-red-500/30",
         }
     ];
 
@@ -76,6 +81,23 @@ export default function OurCourses() {
                                     alt={course.title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
+                                <div className="relative h-64 overflow-hidden">
+                                    {/* Image code... */}
+
+                                    {/* Improved Tags */}
+                                    <div className="absolute top-5 inset-x-5 flex justify-between items-start">
+                                        <span className="bg-black/60 backdrop-blur-md border border-white/10 text-cyan-400 text-[10px] font-bold px-3 py-1.5 rounded-lg uppercase tracking-widest">
+                                            {course.learningCurve}
+                                        </span>
+
+                                        {course.tag && (
+                                            <span className={`backdrop-blur-xl border ${course.tagColor} text-[10px] font-black px-3 py-1.5 rounded-lg shadow-2xl flex items-center gap-1.5`}>
+                                                <span className={`w-1 h-1 rounded-full ${course.tagColor.split(' ')[1].replace('text-', 'bg-')}`} />
+                                                {course.tag}
+                                            </span>
+                                        )}
+                                    </div>
+                                </div>
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent" />
 
                                 {/* Status Tags */}
@@ -104,7 +126,7 @@ export default function OurCourses() {
 
                                 {/* Feature List */}
                                 <div className="space-y-3 mb-8">
-                                    {course.topics.slice(0, 4).map((topic, i) => (
+                                    {course.topics.slice(0, 5).map((topic, i) => (
                                         <div key={i} className="flex items-center gap-3 text-sm text-gray-300">
                                             <div className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
                                             {topic}

@@ -3,7 +3,7 @@ import Navbar from './navbar'
 
 export default function Header() {
   return (
-    <header className="w-full py-7">
+    <header className="w-full py-7 border-b border-b-gray-900 bg-[#020617] sticky top-0 z-50">
       <div className="container flex justify-between items-center mx-auto px-4">
         <h1 className="text-2xl font-siliguri font-bold bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">
           <Link href="/">NextGen ICT Care</Link>
