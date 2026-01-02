@@ -23,7 +23,7 @@ export default function FrequentlyAskQuest() {
     }, [openIndex]);
 
     return (
-        <section className="py-24 bg-[#020617] relative overflow-hidden font-siliguri">
+        <section className="mt-10 py-24 bg-[#020617] relative overflow-hidden font-siliguri">
             {/* Background Decor */}
             <div className="absolute top-1/2 left-0 w-72 h-72 bg-blue-600/10 rounded-full blur-[100px] -z-10" />
 

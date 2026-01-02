@@ -5,7 +5,7 @@ import { FaGraduationCap, FaLightbulb, FaHeart, FaLinkedin } from "react-icons/f
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="relative py-24 px-6 bg-[#020617] overflow-hidden font-siliguri">
+    <section className="relative mt-10 py-24 px-6 bg-[#020617] overflow-hidden font-siliguri">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none" />

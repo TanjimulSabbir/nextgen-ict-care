@@ -1,12 +1,13 @@
 "use client"
+import Link from 'next/link';
 import React from 'react';
 import { FaRocket, FaHandHoldingHeart, FaLightbulb, FaUserShield, FaCheckCircle, FaUserEdit, FaBullseye, FaHeart } from 'react-icons/fa';
+import AboutCourseDetailsSection from './details';
 
 export default function DetailsOfNextGenICTCare() {
     return (
         <section className="bg-[#020617] py-24 px-6 overflow-hidden font-siliguri">
             <div className="max-w-7xl mx-auto">
-
                 {/* --- 1. THE FOUNDERS' STORY (The Heart of NextGen) --- */}
                 <div className="grid lg:grid-cols-2 gap-16 items-center mt-12 mb-32">
                     <div className="relative">
@@ -21,7 +22,7 @@ export default function DetailsOfNextGenICTCare() {
                                 আমাদের যাত্রাটা খুব সহজ ছিল না। আমি, <span className="text-white font-bold">তানজিমুল সাব্বির</span> এবং আমার সহ-প্রতিষ্ঠাতা <span className="text-white font-bold">নির্জনা আহমেদ</span>—আমরা দুজনেই দীর্ঘ সময় ধরে বিভিন্ন জায়গায় আইসিটি পড়িয়েছি। সেই অভিজ্ঞতা থেকে আমরা একটি বিষয় গভীরভাবে উপলব্ধি করি: শিক্ষার্থীরা শুধু তথ্যের অভাবে পিছিয়ে নেই, বরং সঠিক গাইডেন্স এবং সহজ ব্যাখ্যার অভাবে আইসিটিকে ভয় পায়।
                             </p>
                             <p className="bg-white/5 border-l-4 border-cyan-500 p-6 rounded-r-2xl italic text-gray-400">
-                                "আমরা সিদ্ধান্ত নিলাম, আমরা শুধু পড়াবো না; আমরা এইচএসসি আইসিটির একটি কমপ্লিট সলিউশন তৈরি করবো। ২০২৪ সালে সেই জেদ থেকেই জন্ম নিল NextGen ICT Care।"
+                                "আমরা সিদ্ধান্ত নিলাম, আমরা শুধু পড়াবো না; আমরা এইচএসসি আইসিটির একটি কমপ্লিট সলিউশন তৈরি করবো। ২০২৫ সালে সেই জেদ থেকেই জন্ম নিল NextGen ICT Care।"
                             </p>
                             <p>
                                 আজও আমরা প্রতিদিন স্ট্রাগল করছি, শিখছি এবং নিজেদের উন্নত করছি—শুধুমাত্র আপনাদের (শিক্ষার্থীদের) সেরাটা দেওয়ার জন্য। আমাদের লক্ষ্য খুব স্পষ্ট—আইসিটি হবে আপনার সবচাইতে সহজ এবং প্রিয় বিষয়।
@@ -144,17 +145,18 @@ export default function DetailsOfNextGenICTCare() {
                     </div>
                 </div>
 
+                <AboutCourseDetailsSection/>
+
                 {/* --- 4. FINAL CTA --- */}
                 <div className="mt-20 text-center">
-                    <button className="group relative px-12 py-5 bg-white text-black font-black text-xl rounded-2xl overflow-hidden transition-all hover:pr-16 active:scale-95">
+                    <Link href="https://forms.gle/RZjBZrQi1gV7iahY7" target='_blank' className="group relative px-12 py-5 bg-white text-black font-black text-xl rounded-2xl overflow-hidden transition-all hover:pr-16 active:scale-95">
                         <span className="relative z-10 flex items-center gap-3">
                             এখনই রেজিস্ট্রেশন করুন <FaUserEdit className="group-hover:translate-x-2 transition-transform" />
                         </span>
                         <div className="absolute top-0 -right-full w-full h-full bg-cyan-500 transition-all group-hover:right-0" />
-                    </button>
+                    </Link>
                     <p className="mt-6 text-gray-500 text-sm italic">"আপনার সাফল্যই আমাদের একমাত্র অনুপ্রেরণা—তানজিমুল ও নির্জনা"</p>
                 </div>
-
             </div>
         </section>
     );

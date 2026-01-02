@@ -93,9 +93,9 @@ export default function TopBanner() {
                             <div className="absolute inset-0 bg-white transition-transform duration-300 -translate-x-full group-hover:translate-x-0" />
                         </Link>
 
-                        <button className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-2xl hover:bg-white/10 transition-all backdrop-blur-sm">
+                        <Link href="/course-outline" className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-2xl hover:bg-white/10 transition-all backdrop-blur-sm">
                             আরো জানুন
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

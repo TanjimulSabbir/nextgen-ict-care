@@ -2,6 +2,7 @@ import { Navlinks } from '@/data';
 import Link from 'next/link';
 import NavWrapper from './navbar-wrapper';
 import MobileMenu from './mobile-navbar';
+import NavItem from './active-link-item';
 
 export default function Navbar() {
     return (
@@ -21,15 +22,7 @@ export default function Navbar() {
                 {/* Desktop Menu - Static rendering from data */}
                 <div className="hidden lg:flex items-center gap-2">
                     {Navlinks.map((link) => (
-                        <Link
-                            key={link.href}
-                            href={link.href}
-                            className="relative px-5 py-2 text-gray-300 font-medium font-siliguri transition-all duration-300 hover:text-white group"
-                        >
-                            <span className="relative z-10">{link.name}</span>
-                            <div className="absolute inset-0 bg-white/5 rounded-xl scale-0 group-hover:scale-100 transition-transform duration-300 -z-10" />
-                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-cyan-500 rounded-full blur-[2px] transition-all group-hover:w-1/2" />
-                        </Link>
+                        <NavItem key={link.href} href={link.href} name={link.name} />
                     ))}
 
                     <Link

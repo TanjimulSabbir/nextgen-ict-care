@@ -3,20 +3,20 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp, FaDirectio
 
 export default function Location() {
     return (
-        <section className="relative py-24 bg-[#020617] overflow-hidden font-siliguri">
+        <section className="relative mt-10 py-24 bg-[#020617] overflow-hidden font-siliguri">
             {/* Background Glows */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-600/5 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-0 right-0 w-125 h-125 bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-125 h-125 bg-cyan-600/5 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
 
                 {/* Section Header */}
                 <div className="max-w-3xl mx-auto text-center mb-20">
                     <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
-                        আমাদের <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">অবস্থান</span> ও যোগাযোগ
+                        আমাদের <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400">অবস্থান</span> ও যোগাযোগ
                     </h1>
                     <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-                        তেজগাঁওয়ের প্রাণকেন্দ্রে আমাদের আধুনিক লার্নিং সেন্টার। সরাসরি দেখা করতে বা যেকোনো তথ্যের জন্য চলে আসুন আমাদের ঠিকানায়।
+                        তেজগাঁওয়ের প্রাণকেন্দ্রে আমাদের NextGen ICT Care লার্নিং সেন্টার। সরাসরি দেখা করতে বা যেকোনো তথ্যের জন্য চলে আসুন আমাদের ঠিকানায়।
                     </p>
                 </div>
 
