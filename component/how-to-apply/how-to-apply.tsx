@@ -1,10 +1,9 @@
 import { FaFileInvoiceDollar, FaLaptopCode, FaMapMarkerAlt, FaUserTie } from 'react-icons/fa'
-import Contact from '../contact/contact'
 
 export default function HowToApply() {
   return <>
     {/* --- Enrollment Process & Mentor Info --- */}
-    < div className="grid lg:grid-cols-2 gap-16 items-start bg-white/2 border border-white/5 max-w-7xl mx-auto mb-20 px-8 md:p-16 rounded-[4rem]" >
+    < div className="max-w-5xl mx-auto gap-16 items-start py-5 bg-white/2 border border-white/5 max-w-7xl mx-auto mb-20 px-8 md:p-16 rounded-[4rem]" >
       {/* Process Steps */}
       < div >
         <h3 className="text-3xl font-bold text-white mb-10">ভর্তি হওয়ার ধাপসমূহ</h3>
@@ -29,7 +28,6 @@ export default function HowToApply() {
           ))}
         </div>
       </div>
-      <Contact />
     </div >
   </>
 }

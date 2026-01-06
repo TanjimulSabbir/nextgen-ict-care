@@ -88,7 +88,7 @@ export default function TopBanner() {
                             className="group relative px-10 py-5 bg-cyan-500 text-black font-black text-xl rounded-2xl overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(6,182,212,0.4)]"
                         >
                             <span className="relative z-10 flex items-center gap-3">
-                                রেজিস্ট্রেশন করুন <FaChevronRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                                    ভর্তি ফরম পূরণ করুন <FaChevronRight className="text-sm group-hover:translate-x-1 transition-transform" />
                             </span>
                             <div className="absolute inset-0 bg-white transition-transform duration-300 -translate-x-full group-hover:translate-x-0" />
                         </Link>
