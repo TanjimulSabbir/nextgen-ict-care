@@ -29,7 +29,7 @@ const AboutUs: React.FC = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[3rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
             <div className="relative bg-[#0f172a]/60 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-14 shadow-2xl">
               <p className="text-gray-300 text-lg md:text-2xl leading-relaxed text-center font-light">
-                <span className="text-white font-bold underline decoration-cyan-500/50">NextGen ICT Care</span> কেবল একটি কোচিং নয়; এটি একটি ডিজিটাল বিপ্লব। আমরা মুখস্থ বিদ্যায় বিশ্বাসী নই, বরং প্রতিটি লজিককে বাস্তব জীবনের সাথে মিলিয়ে শিক্ষার্থীদের ব্রেইনে গেঁথে দেয়াই আমাদের সার্থকতা।
+                <span className="text-white font-bold underline decoration-cyan-500/50">NextGen ICT Care</span> কেবল একটি কোচিং নয়; এটি আইসিটি শেখার এক নতুন যাত্রা। আমরা মুখস্থ বিদ্যায় বিশ্বাসী নই, বরং প্রতিটি লজিককে বাস্তব জীবনের সাথে মিলিয়ে শিক্ষার্থীদের ব্রেইনে গেঁথে দেয়াই আমাদের সার্থকতা।
               </p>
 
               {/* Quick Vision Points */}
