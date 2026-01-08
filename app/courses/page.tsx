@@ -1,8 +1,13 @@
 import OurCourses from '@/component/courses'
 import HowToApply from '@/component/how-to-apply/how-to-apply'
+import { Metadata } from 'next';
 import Link from 'next/link'
 import { FaUserEdit } from 'react-icons/fa'
 
+export const metadata: Metadata = {
+    title: "কোর্সসমূহ | NextGen ICT Care - আপনার প্রয়োজন অনুযায়ী সেরা প্ল্যান",
+    description: "HSC ১ম বর্ষ, ২য় বর্ষ এবং ২০২৬ পরীক্ষার্থীদের জন্য আলাদা আলাদা ব্যাচ। ৩ থেকে ৫ মাসের কমপ্লিট সিলেবাস এবং স্পেশাল সলভ ক্লাস নিয়ে আমাদের বিশেষ আয়োজন।",
+};
 export default function Courses() {
     return (
         <div className='mt-20'>

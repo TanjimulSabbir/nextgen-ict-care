@@ -1,9 +1,11 @@
-"use client"
+import { Metadata } from 'next';
 import Link from 'next/link';
-import React from 'react';
-import { FaRocket, FaHandHoldingHeart, FaLightbulb, FaUserShield, FaCheckCircle, FaUserEdit, FaBullseye, FaHeart } from 'react-icons/fa';
+import { FaBullseye, FaCheckCircle, FaHandHoldingHeart, FaHeart, FaLightbulb, FaUserEdit, FaUserShield } from 'react-icons/fa';
 import AboutCourseDetailsSection from './details';
-
+export const metadata: Metadata = {
+    title: "বিস্তারিত | কেন আমরা সেরা? | NextGen ICT Care",
+    description: "বোর্ড প্রশ্নের ব্যবচ্ছেদ, সাপ্তাহিক মূল্যায়ন এবং প্র্যাকটিক্যাল সেশনের মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর জন্য আইসিটিকে সহজ করে তুলি। বিস্তারিত জানুন এখানে।",
+};
 export default function DetailsOfNextGenICTCare() {
     return (
         <section className="bg-[#020617] pt-24 pb-10 px-6 overflow-hidden font-siliguri">

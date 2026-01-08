@@ -1,10 +1,14 @@
 import HowToApply from "@/component/how-to-apply/how-to-apply";
-import React from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp, FaDirections } from "react-icons/fa";
-
+import { Metadata } from "next";
+import Link from "next/link";
+import { FaClock, FaDirections, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaUserEdit, FaWhatsapp } from "react-icons/fa";
+export const metadata: Metadata = {
+    title: "যোগাযোগ ও ঠিকানা | NextGen ICT Care",
+    description: "সরাসরি যোগাযোগ করতে বা আমাদের অফলাইন সেন্টারে ভিজিট করতে লোকেশন ম্যাপ ও ফোন নম্বর দেখুন। আজই আপনার সিট বুক করুন!",
+};
 export default function Location() {
     return (
-        <section className="relative mt-10 py-24 bg-[#020617] overflow-hidden font-siliguri">
+        <section className="relative mt-10 pt-24 pb-10 bg-[#020617] overflow-hidden font-siliguri">
             {/* Background Glows */}
             <div className="absolute top-0 right-0 w-125 h-125 bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-125 h-125 bg-cyan-600/5 rounded-full blur-[120px] pointer-events-none" />
@@ -35,9 +39,9 @@ export default function Location() {
                                 <div>
                                     <h3 className="text-xl font-bold text-white mb-2">সরাসরি ঠিকানা (NextGen ICT Care)</h3>
                                     <p className="text-gray-400 leading-relaxed text-sm">
-                                        জ্ঞানের আলো কোচিং সেন্টারের পাশেই <br />
-                                        <span className="text-gray-300 font-medium">(তেজগাঁও সরকারি উচ্চ বিদ্যালয়ের ডান পাশের গলিতে ৩য় তলা)</span> <br />
-                                        তেজগাঁও, ঢাকা, বাংলাদেশ।
+                                        জ্ঞানের আলো কোচিং সেন্টারের পাশেই ৩য় তলায়<br />
+                                        <span className="text-gray-300 font-medium">(আরিবাস কিচেন-এর পাশের গলিতে)</span>
+                                        , ফার্মগেট, ঢাকা, বাংলাদেশ<br />
                                     </p>
                                 </div>
                             </div>
@@ -109,16 +113,64 @@ export default function Location() {
                     </div>
                 </div>
 
-             <div className="mt-28">
+                <div className="mt-28">
                     <HowToApply />
-             </div>
-                
+                </div>
                 {/* Footer Insight */}
                 <div className="mt-20 py-10 border-t border-white/5 text-center">
                     <p className="max-w-2xl mx-auto leading-relaxed italic text-cyan-400">
                         "NextGen ICT Care – আপনার <span className="text-cyan-400 font-semibold">বিশ্বস্ত ICT শেখার ঠিকানা হোক</span>।"
                     </p>
                 </div>
+
+                {/* --- 4. FINAL CTA (Premium Design) --- */}
+                <div className="text-center relative">
+
+                    {/* Background Glow Effect */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/20 rounded-full blur-[100px] pointer-events-none" />
+
+                    <div className="relative z-10">
+                        <Link
+                            href="https://forms.gle/RZjBZrQi1gV7iahY7"
+                            target='_blank'
+                            className="group relative inline-flex items-center justify-center px-12 py-6 bg-cyan-500 text-black font-black text-2xl rounded-3xl overflow-hidden transition-all duration-500 hover:shadow-[0_0_50px_rgba(6,182,212,0.4)] active:scale-95"
+                        >
+                            {/* The Slide-in Background */}
+                            <div className="absolute inset-0 bg-cyan-500 translate-y-[101%] group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
+
+                            {/* Button Content */}
+                            <div className="relative z-10 flex items-center gap-4 transition-colors duration-500">
+                                ভর্তি ফরম পূরণ করুন
+                                <div className="p-2 bg-black/5 rounded-xl group-hover:bg-white/20 transition-colors">
+                                    <FaUserEdit className="group-hover:rotate-12 transition-transform duration-300" />
+                                </div>
+                            </div>
+                        </Link>
+
+                        {/* Brand Promise Message */}
+                        <div className="mt-10 space-y-3">
+                            <p className="text-gray-400 text-lg font-medium tracking-wide">
+                                আপনার সাফল্যই আমাদের একমাত্র অনুপ্রেরণা
+                            </p>
+                            <div className="flex items-center justify-center gap-3">
+                                <span className="h-px w-8 bg-gradient-to-r from-transparent to-cyan-500/50"></span>
+                                <p className="text-cyan-400 font-siliguri font-bold italic text-xl">
+                                    — তানজিমুল ও নির্জনা
+                                </p>
+                                <span className="h-px w-8 bg-gradient-to-l from-transparent to-cyan-500/50"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Subtle Animated Elements */}
+                    <div className="mt-8 flex justify-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-cyan-500 animate-bounce shadow-[0_0_10px_#06b6d4]" />
+                        <span className="w-2 h-2 rounded-full bg-blue-500 animate-bounce [animation-delay:0.2s]" />
+                        <span className="w-2 h-2 rounded-full bg-cyan-500 animate-bounce [animation-delay:0.4s]" />
+                    </div>
+                </div>
+
+
             </div>
         </section>
     );
