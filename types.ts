@@ -12,8 +12,8 @@ export interface Instructor {
   image: string| StaticImageData;
   experience: string;
   bio: string;
-  education: Education[];
-  workplace?: string;
+  education?: Education[];
+  workplace?: {title:string,description:string};
   expertise: string[];
   teachingStyle: string;
   strengths?: string[];

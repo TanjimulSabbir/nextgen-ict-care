@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle, FaChevronRight } from 'react-icons/fa';
 
 const courses = [
     {
@@ -31,7 +31,7 @@ const courses = [
         title: "এইচএসসি পরীক্ষার্থী ২০২৬ ব্যাচ",
         subTitle: "Last Moment Prep",
         courseFee: "৳৮,০০০",
-        discountPrice: "৳৭,৫০০",
+        discountPrice: "৳৭,০০০",
         duration: "৩ মাস",
         learningCurve: "Fast Track",
         details: "অল্প সময়ে সম্পূর্ণ সিলেবাস শেষ করে সরাসরি এ-প্লাস টার্গেটে পড়াশোনা। স্পেশাল টিপস ও শর্টকাট মেথড।",
@@ -43,7 +43,7 @@ const courses = [
 
 export default function AboutCourseDetailsSection() {
     return (
-        <section className="bg-[#020617] py-24 px-6 overflow-hidden font-siliguri">
+        <section className="bg-[#020617] pt-24 pb-10 md:px-6 overflow-hidden font-siliguri">
             <div className="max-w-7xl mx-auto">
 
                 {/* --- Section Header --- */}
@@ -61,7 +61,7 @@ export default function AboutCourseDetailsSection() {
                     {courses.map((course, index) => (
                         <div key={index} className="relative group p-px rounded-[2.5rem] bg-gradient-to-b from-white/10 to-transparent hover:from-cyan-500/40 transition-all duration-500 shadow-2xl">
                             <div className="bg-[#0f172a] rounded-[2.5rem] p-8 h-full flex flex-col relative overflow-hidden">
-                                <span className={`inline-block px-4 py-1 rounded-full text-xs font-bold border mb-6 ${course.tagColor}`}>
+                                <span className={`inline-block text-center px-4 py-1 rounded-full text-xs font-bold border mb-6 ${course.tagColor}`}>
                                     {course.tag}
                                 </span>
 
@@ -87,9 +87,20 @@ export default function AboutCourseDetailsSection() {
                                         <span>সময়কাল: {course.duration}</span>
                                         <span>{course.learningCurve}</span>
                                     </div>
-                                    <Link href="https://forms.gle/RZjBZrQi1gV7iahY7" target="_blank" className="block w-full text-center py-4 bg-white text-black font-black rounded-2xl hover:bg-cyan-500 transition-colors">
-                                        ভর্তি ফরম পূরণ করুন
-                                    </Link>
+                                    {/* Action Buttons */}
+                                    <div className="mt-14 flex flex-col sm:flex-row justify-center items-center gap-6">
+                                        <Link
+                                            href="https://forms.gle/wmFgGWysZss8HYAR8"
+                                            target="_blank"
+                                            className="group relative px-5 md:px-10 py-5 bg-cyan-500 text-black font-black text-xl rounded-2xl overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(6,182,212,0.4)]"
+                                        >
+                                            <span className="relative z-10 flex items-center gap-3">
+                                                ভর্তি ফরম পূরণ করুন <FaChevronRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                                            </span>
+                                            <div className="absolute inset-0 bg-white transition-transform duration-300 -translate-x-full group-hover:translate-x-0" />
+                                        </Link>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>

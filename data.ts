@@ -1,5 +1,5 @@
 import { AboutUsInfo, Instructor } from "./types";
-import TanjimulSabbir from "@/public/media/mentors/TanjimulSabbir.jpeg";
+import TanjimulSabbir from "@/public/media/mentors/tanjimulsabbir.jpg";
 import Nirjona from "@/public/media/mentors/Nirjona.jpeg";
 
 export { TanjimulSabbir, Nirjona };
@@ -59,16 +59,20 @@ export const instructors: Instructor[] = [
     image: TanjimulSabbir,
     experience: "Software ডেভেলপমেন্ট ও HSC ICT শিক্ষাদানে বাস্তব অভিজ্ঞতা",
     bio: "আইসিটি শিক্ষাকে বাস্তব উদাহরণ, লজিক্যাল চিন্তা এবং পরীক্ষাভিত্তিক কৌশলের মাধ্যমে সহজ ও কার্যকরভাবে উপস্থাপন করতে আগ্রহী একজন সফটওয়্যার ইঞ্জিনিয়ার। HSC শিক্ষার্থীদের কনসেপ্ট ক্লিয়ার করাই যার মূল লক্ষ্য।",
-    workplace: "Software Engineer at Utech Innovation Ltd.",
+    workplace: {
+      title: "Software Engineer at Utech Innovation Ltd.",
+      description:
+        "দীর্ঘ ৩ বছরেরও বেশি সময় ধরে সফটওয়্যার ইন্ডাস্ট্রিতে রিয়েল-লাইফ প্রজেক্ট এবং আর্কিটেকচার ডিজাইনে কাজ করার অভিজ্ঞতা থেকে আমি শিক্ষার্থীদের শেখাই—কিভাবে থিওরির বাইরে গিয়ে আইসিটিকে প্র্যাকটিক্যালি ইমপ্লিমেন্ট করতে হয়।",
+    },
     education: [
       {
         institute: "রাজশাহী বিশ্ববিদ্যালয় (RU)",
-        department: "দর্শন ও মনোবিজ্ঞান",
+        department: "Philosophy and Psychology",
       },
     ],
     expertise: [
       "HSC আইসিটি",
-      "প্রোগ্রামিংয়ের বেসিক ধারণা",
+      "প্রোগ্রামিংয়ের বেসিক থেকে এডভ্যান্স ধারণা",
       "ওয়েব টেকনোলজি",
       "লজিক ও সমস্যা সমাধান",
       "পরীক্ষাভিত্তিক প্রস্তুতি",
@@ -84,7 +88,7 @@ export const instructors: Instructor[] = [
   },
   {
     id: 2,
-    name: "আয়েশা আহমেদ নির্জনা",
+    name: "আয়শা আহমেদ নির্জনা",
     designation: "আইসিটি লেকচারার, মেন্টর ও একাডেমিক কনসালট্যান্ট",
     image: Nirjona,
     experience: "একাডেমিক পর্যায়ে আইসিটি শিক্ষাদানে অভিজ্ঞ",
@@ -227,7 +231,7 @@ export const faqData = [
   {
     question: "কোর্সের ফি কত? টাকা ফেরত নেয়ার নিয়ম কী?",
     answer:
-      "কোর্স ফি প্রথম বর্ষের জন্য ৳১০,০০০ টাকা। দ্বিতীয় বর্ষের জন্য ৳১২,০০০। HSC পরীক্ষার্থীর জন্য ৭,৫০০ টাকা। । যদি কোনো কারণে ক্লাস শুরু হওয়ার আগেই ফি পরিশোধ করা হয়ে থাকে এবং আপনি বাতিল করতে চান, ৫ দিনের মধ্যে টাকা ফেরত পাওয়া যাবে।",
+      "কোর্স ফি প্রথম বর্ষের জন্য ৳১০,০০০ টাকা। দ্বিতীয় বর্ষের জন্য ৳১২,০০০। HSC পরীক্ষার্থীর জন্য ৭,০০০ টাকা। । যদি কোনো কারণে ক্লাস শুরু হওয়ার আগেই ফি পরিশোধ করা হয়ে থাকে এবং আপনি বাতিল করতে চান, ৫ দিনের মধ্যে টাকা ফেরত পাওয়া যাবে।",
   },
   {
     question: "ডেমো ক্লাস নেওয়া সম্ভব কি?",
